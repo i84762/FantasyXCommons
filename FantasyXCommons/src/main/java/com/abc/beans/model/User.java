@@ -34,8 +34,8 @@ public class User implements CoreEntity
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private long id;
 	
-	@Column(name = "username")
-	private String username;
+	@Column(name = "userName")
+	private String userName;
 	
 	@Column(name = "FIRST_NAME")
 	private String firstName;
@@ -86,12 +86,12 @@ public class User implements CoreEntity
 	
 	public String getUsername()
 	{
-		return this.username;
+		return this.userName;
 	}
 
 	public void setUsername(String username)
 	{
-		this.username = username;
+		this.userName = username;
 	}
 
 	public String getPassword()
